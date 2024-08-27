@@ -71,13 +71,12 @@ export const HeroSection = () => {
           </div>
         </div>
         <div className="max-w-lg mx-auto">
-          <h1 className="font-serif text-3xl md:text-5xl text-center mt-8 tracking-wide">
+          <h1 className="font-serif text-3xl md:text-4xl text-center mt-8 tracking-wide">
             Crafting Meaningful Digital Experiences
           </h1>
           <p className="mt-4 text-center text-white/60 md:text-lg">
-            Crafting Meaningful Digital Experiences Crafting Meaningful Digital
-            Experiences Crafting Meaningful Digital Experiences Crafting
-            Meaningful
+            I&apos;m an independent full-stack web developer, focused on
+            building seamless user experiences.
           </p>
         </div>
         <div className="flex flex-col md:flex-row justify-center items-center mt-8 gap-4">
@@ -89,6 +88,7 @@ export const HeroSection = () => {
             onClick={ConnectClick}
             className="inline-flex items-center gap-2 border border-white bg-white text-gray-900 px-6 h-12 rounded-xl z-10"
           >
+            <span>👋🏻</span>
             <span className="font-semibold">Let&apos;s Connect</span>
           </button>
         </div>
