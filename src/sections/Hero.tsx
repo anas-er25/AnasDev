@@ -1,3 +1,4 @@
+"use client";
 import memojiImage from "@/assets/images/memoji-computer.png";
 import grainImage from "@/assets/images/grain.jpg";
 import ArrowDown from "@/assets/icons/arrow-down.svg";
@@ -7,6 +8,10 @@ import Image from "next/image";
 import { HeroOrbit } from "@/components/HeroOrbit";
 
 export const HeroSection = () => {
+  const ConnectClick = () => {
+    const number = "+212696486911";
+    window.open(`https://wa.me/${number}`, "_blank");
+  };
   return (
     <div className="py-32 md:py-48 lg:py-60 relative z-0 overflow-x-clip">
       <div className="absolute inset-0 [mask-image:linear-gradient(to_bottom,transparent,black_10%,black_70%,transparent)]">
@@ -76,11 +81,14 @@ export const HeroSection = () => {
           </p>
         </div>
         <div className="flex flex-col md:flex-row justify-center items-center mt-8 gap-4">
-          <button className="inline-flex items-center gap-2 border border-white/15 px-6 h-12 rounded-xl">
+          <button className="inline-flex items-center gap-2 border border-white/15 px-6 h-12 rounded-xl z-10">
             <span className="font-semibold ">Explore My Work</span>
             <ArrowDown className="size-4" />
           </button>
-          <button className="inline-flex items-center gap-2 border border-white bg-white text-gray-900 px-6 h-12 rounded-xl">
+          <button
+            onClick={ConnectClick}
+            className="inline-flex items-center gap-2 border border-white bg-white text-gray-900 px-6 h-12 rounded-xl z-10"
+          >
             <span className="font-semibold">Let&apos;s Connect</span>
           </button>
         </div>
