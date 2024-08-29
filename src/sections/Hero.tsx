@@ -12,8 +12,15 @@ export const HeroSection = () => {
     const number = "+212696486911";
     window.open(`https://wa.me/${number}`, "_blank");
   };
+  const scrollIntoView = () => {
+    const projectsSection = document.getElementById("project");
+    projectsSection?.scrollIntoView({ behavior: "smooth" });
+  };
   return (
-    <div className="py-32 md:py-48 lg:py-60 relative z-0 overflow-x-clip">
+    <div
+      className="py-32 md:py-48 lg:py-60 relative z-0 overflow-x-clip"
+      id="home"
+    >
       <div className="absolute inset-0 [mask-image:linear-gradient(to_bottom,transparent,black_10%,black_70%,transparent)]">
         <div
           className="absolute inset-0 -z-30 opacity-5"
@@ -25,35 +32,84 @@ export const HeroSection = () => {
         <div className="size-[820px] hero-ring"></div>
         <div className="size-[1020px] hero-ring"></div>
         <div className="size-[1220px] hero-ring"></div>
-        <HeroOrbit size={800} rotation={-72}>
-          <StarIcon className="size-28 text-emerald-300  animate-spin [animation-duration:15s]" />
+        <HeroOrbit
+          size={430}
+          rotation={-14}
+          shouldOrbit
+          orbitDuration="30s"
+          shouldSpin
+          spinDuration="3s"
+        >
+          <SparkleIcon className="size-8 text-emerald-300/20" />
         </HeroOrbit>
-        <HeroOrbit size={550} rotation={20}>
-          <StarIcon className="size-12 text-emerald-300 animate-spin [animation-duration:15s]" />
+        <HeroOrbit
+          size={440}
+          rotation={79}
+          shouldOrbit
+          orbitDuration="32s"
+          shouldSpin
+          spinDuration="3s"
+        >
+          <SparkleIcon className="size-5 text-emerald-300/20" />
         </HeroOrbit>
-        <HeroOrbit size={590} rotation={100}>
-          <StarIcon className="size-8 text-emerald-300 animate-spin [animation-duration:15s]" />
-        </HeroOrbit>
-        <HeroOrbit size={420} rotation={-14}>
-          <SparkleIcon className="size-8 text-emerald-300/20 animate-spin [animation-duration:15s]" />
-        </HeroOrbit>
-        <HeroOrbit size={440} rotation={79}>
-          <SparkleIcon className="size-5 text-emerald-300/20 animate-spin [animation-duration:15s]" />
-        </HeroOrbit>
-        <HeroOrbit size={530} rotation={178}>
-          <SparkleIcon className="size-10 text-emerald-300/20 animate-spin [animation-duration:15s]" />
-        </HeroOrbit>
-        <HeroOrbit size={710} rotation={145}>
-          <SparkleIcon className="size-14 text-emerald-300/20 animate-spin [animation-duration:15s]" />
-        </HeroOrbit>
-        <HeroOrbit size={720} rotation={90}>
-          <div className="size-3 rounded-full bg-emerald-300/20" />
-        </HeroOrbit>
-        <HeroOrbit size={520} rotation={-40}>
+        <HeroOrbit size={520} rotation={-40} shouldOrbit orbitDuration="34s">
           <div className="size-2 rounded-full bg-emerald-300/20" />
         </HeroOrbit>
-        <HeroOrbit size={650} rotation={-5}>
+        <HeroOrbit
+          size={530}
+          rotation={178}
+          shouldOrbit
+          orbitDuration="36s"
+          shouldSpin
+          spinDuration="1s"
+        >
+          <SparkleIcon className="size-10 text-emerald-300/20" />
+        </HeroOrbit>
+        <HeroOrbit
+          size={550}
+          rotation={20}
+          shouldOrbit
+          orbitDuration="38s"
+          shouldSpin
+          spinDuration="10s"
+        >
+          <StarIcon className="size-12 text-emerald-300" />
+        </HeroOrbit>
+        <HeroOrbit
+          size={590}
+          rotation={100}
+          shouldOrbit
+          orbitDuration="40s"
+          shouldSpin
+          spinDuration="10s"
+        >
+          <StarIcon className="size-8 text-emerald-300" />
+        </HeroOrbit>
+        <HeroOrbit size={650} rotation={-5} shouldOrbit orbitDuration="42s">
           <div className="size-3 rounded-full bg-emerald-300/20" />
+        </HeroOrbit>
+        <HeroOrbit
+          size={710}
+          rotation={145}
+          shouldOrbit
+          orbitDuration="44s"
+          shouldSpin
+          spinDuration="1s"
+        >
+          <SparkleIcon className="size-14 text-emerald-300/20" />
+        </HeroOrbit>
+        <HeroOrbit size={720} rotation={90} shouldOrbit orbitDuration="46s">
+          <div className="size-3 rounded-full bg-emerald-300/20" />
+        </HeroOrbit>
+        <HeroOrbit
+          size={800}
+          rotation={-72}
+          shouldOrbit
+          orbitDuration="48s"
+          shouldSpin
+          spinDuration="10s"
+        >
+          <StarIcon className="size-28 text-emerald-300" />
         </HeroOrbit>
       </div>
       <div className="container">
@@ -64,7 +120,9 @@ export const HeroSection = () => {
             alt="person peeking form behind laptop"
           />
           <div className="bg-gray-950 border border-gray-800 py-1.5 px-4 inline-flex items-center gap-4 rounded-lg">
-            <div className="bg-green-500 size-2.5 rounded-full "></div>
+            <div className="bg-green-500 size-2.5 rounded-full relative">
+              <div className="bg-green-500 absolute inset-0 rounded-full animate-ping-large"></div>
+            </div>
             <div className="text-sm font-medium">
               Available for new projects
             </div>
@@ -80,10 +138,14 @@ export const HeroSection = () => {
           </p>
         </div>
         <div className="flex flex-col md:flex-row justify-center items-center mt-8 gap-4">
-          <button className="inline-flex items-center gap-2 border border-white/15 px-6 h-12 rounded-xl z-10">
+          <button
+            className="inline-flex items-center gap-2 border border-white/15 px-6 h-12 rounded-xl z-10"
+            onClick={scrollIntoView}
+          >
             <span className="font-semibold ">Explore My Work</span>
             <ArrowDown className="size-4" />
           </button>
+
           <button
             onClick={ConnectClick}
             className="inline-flex items-center gap-2 border border-white bg-white text-gray-900 px-6 h-12 rounded-xl z-10"

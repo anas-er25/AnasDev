@@ -5,6 +5,8 @@ import grainImage from "@/assets/images/grain.jpg";
 import CheckIcon from "@/assets/icons/check-circle.svg";
 import ArrowUpRightIcon from "@/assets/icons/arrow-up-right.svg";
 import Image from "next/image";
+import { HeaderSection } from "@/components/HeaderSection";
+import { Card } from "@/components/Card";
 
 const portfolioProjects = [
   {
@@ -58,31 +60,19 @@ const portfolioProjects = [
 
 export const ProjectsSection = () => {
   return (
-    <section className="pb-16 lg:py-24">
+    <section className="pb-16 lg:py-24" id="project">
       <div className="container">
-        <div className="flex justify-center">
-          <p className="uppercase font-semibold tracking-widest bg-gradient-to-r from-emerald-300 to-sky-400 text-transparent bg-clip-text text-center">
-            CURATED WORK
-          </p>
-        </div>
-        <h2 className="font-serif text-3xl md:text-5xl text-center mt-6">
-          Featured Case Studies
-        </h2>
-        <p className="text-center text-white/60 mt-4 md:text-lg lg:text-xl max-w-md mx-auto">
-          Compilation of case studies that evoke my sense of pride
-        </p>
+        <HeaderSection
+          eyebrow="CURATED WORK"
+          title="Featured Case Studies"
+          description="Compilation of case studies that evoke my sense of pride"
+        />
         <div className="flex flex-col mt-10 md:mt-20 gap-20">
           {portfolioProjects.map((project) => (
-            <div
+            <Card
               key={project.title}
-              className="bg-gray-800 px-8 pt-8 md:px-10 lg:pt-16 lg:px-20 md:pt-12 rounded-3xl relative z-0 overflow-hidden after:z-10 after:content-[''] after:absolute after:inset-0 after:outline-2 after:outline after:-outline-offset-2 after:rounded-3xl after:outline-white/20 after:pointer-events-none"
+              className="px-8 pt-8 pb-0 md:px-10 lg:pt-16 lg:px-20 md:pt-12"
             >
-              <div
-                className="absolute inset-0 -z-10 opacity-5 "
-                style={{
-                  backgroundImage: `url(${grainImage.src})`,
-                }}
-              ></div>
               <div className="lg:grid lg:grid-cols-2 lg:gap-16">
                 <div className="lg:pb-16">
                   <div className="bg-gradient-to-r from-emerald-300 to-sky-400 inline-flex font-bold uppercase tracking-widest text-sm gap-2 text-transparent bg-clip-text">
@@ -120,7 +110,7 @@ export const ProjectsSection = () => {
                   />
                 </div>
               </div>
-            </div>
+            </Card>
           ))}
         </div>
       </div>

@@ -1,24 +1,28 @@
 import StarIcon from "@/assets/icons/star.svg";
 const words = [
-  "Performant",
-  "Collaboration",
-  "Problem Solving",
-  "Accessible",
-  "Adaptability",
-  "Secure",
-  "Time management",
-  "User-friendly",
-  "Responsive",
-  "Customizable",
-  "Scalable",
-  "Communication",
-  "Modular",
-  "Maitainable",
-  "Interactive",
-  "Advanced",
-  "Reliable",
+  "HTML5",
+  "CSS3",
+  "JavaScript",
+  "Bootstrap",
+  "Tailwind CSS",
+  "PHP",
+  "React JS",
+  "Laravel",
+  "NodeJS",
+  "ExpressJS",
+  "MongoDB",
+  "MySQL",
+  "Docker",
+  "Python",
+  "VS Code",
+  "Azure DevOps",
+  "Jira",
+  "Figma",
+  "Git",
+  "GitHub",
+  "GitLab",
 ];
-export const TapeSection = () => {
+export const TechnologieSection = () => {
   return (
     <div className="py-16 lg:py-24 overflow-x-clip">
       <div className="bg-gradient-to-r from-emerald-300 to-sky-400 -rotate-3 -mx-1">
