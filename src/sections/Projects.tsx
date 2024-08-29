@@ -1,7 +1,7 @@
-import darkSaasLandingPage from "@/assets/images/dark-saas-landing-page.png";
-import lightSaasLandingPage from "@/assets/images/light-saas-landing-page.png";
-import aiStartupLandingPage from "@/assets/images/ai-startup-landing-page.png";
-import grainImage from "@/assets/images/grain.jpg";
+import VirtualRLandingPage from "@/assets/images/VirtualR.png";
+import HRMImage from "@/assets/images/veneroo.png";
+import MedicareplusImage from "@/assets/images/medicareplus.png";
+import DefpImage from "@/assets/images/defp.png";
 import CheckIcon from "@/assets/icons/check-circle.svg";
 import ArrowUpRightIcon from "@/assets/icons/arrow-up-right.svg";
 import Image from "next/image";
@@ -19,7 +19,7 @@ const portfolioProjects = [
       { title: "Increased mobile traffic by 35%" },
     ],
     link: "https://virtual-r-iota.vercel.app/",
-    image: aiStartupLandingPage,
+    image: VirtualRLandingPage,
     text: "Vist Live Site",
   },
   {
@@ -37,7 +37,7 @@ const portfolioProjects = [
       { title: "Streamlined project management tools" },
     ],
     link: "https://github.com/anas-er25/CMS-ERP",
-    image: lightSaasLandingPage,
+    image: HRMImage,
     text: "Get Source Code",
   },
   {
@@ -53,7 +53,25 @@ const portfolioProjects = [
       },
     ],
     link: "https://medicareplus.ma/",
-    image: darkSaasLandingPage,
+    image: MedicareplusImage,
+    text: "Vist Live Site",
+  },
+  {
+    company: "D-def",
+    year: "2023",
+    title: "School Management website",
+    results: [
+      { title: "Developing a School Management Website" },
+      { title: "Develeped and maintained client websites" },
+      { title: "Collaborated with cross-functional teams" },
+      {
+        title: "Implemented responsive design and cross-browser compatibility",
+      },
+      { title: "Enhanced user experience by 40%" },
+      { title: "Improved site speed by 50%" },
+    ],
+    link: "https://d-efp.vercel.app/",
+    image: DefpImage,
     text: "Vist Live Site",
   },
 ];
