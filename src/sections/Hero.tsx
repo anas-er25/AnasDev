@@ -1,4 +1,5 @@
 "use client";
+import { motion } from "framer-motion";
 import memojiImage from "@/assets/images/memoji-computer.png";
 import grainImage from "@/assets/images/grain.jpg";
 import ArrowDown from "@/assets/icons/arrow-down.svg";
@@ -6,6 +7,20 @@ import StarIcon from "@/assets/icons/star.svg";
 import SparkleIcon from "@/assets/icons/sparkle.svg";
 import Image from "next/image";
 import { HeroOrbit } from "@/components/HeroOrbit";
+const buttonVariants = {
+  hover: { scale: 1.1 },
+  tap: { scale: 0.95 },
+};
+
+const textVariants = {
+  hidden: { opacity: 0, y: 50 },
+  visible: { opacity: 1, y: 0 },
+};
+
+const imageVariants = {
+  hidden: { opacity: 0, scale: 0.5 },
+  visible: { opacity: 1, scale: 1 },
+};
 
 export const HeroSection = () => {
   const ConnectClick = () => {
@@ -138,21 +153,27 @@ export const HeroSection = () => {
           </p>
         </div>
         <div className="flex flex-col md:flex-row justify-center items-center mt-8 gap-4">
-          <button
+          <motion.button
             className="inline-flex items-center gap-2 border border-white/15 px-6 h-12 rounded-xl z-10"
             onClick={scrollIntoView}
+            whileHover="hover"
+            whileTap="tap"
+            variants={buttonVariants}
           >
-            <span className="font-semibold ">Explore My Work</span>
+            <span className="font-semibold">Explore My Work</span>
             <ArrowDown className="size-4" />
-          </button>
+          </motion.button>
 
-          <button
+          <motion.button
             onClick={ConnectClick}
             className="inline-flex items-center gap-2 border border-white bg-white text-gray-900 px-6 h-12 rounded-xl z-10"
+            whileHover="hover"
+            whileTap="tap"
+            variants={buttonVariants}
           >
             <span>👋🏻</span>
             <span className="font-semibold">Let&apos;s Connect</span>
-          </button>
+          </motion.button>
         </div>
       </div>
     </div>
