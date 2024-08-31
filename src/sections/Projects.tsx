@@ -10,7 +10,40 @@ import { Card } from "@/components/Card";
 
 const portfolioProjects = [
   {
-    company: "Quantum Dynamics",
+    company: "D-def",
+    year: "2024",
+    title: "School Management website",
+    results: [
+      { title: "Developing a School Management Website" },
+      { title: "Develeped and maintained client websites" },
+      { title: "Collaborated with cross-functional teams" },
+      {
+        title: "Implemented responsive design and cross-browser compatibility",
+      },
+      { title: "Enhanced user experience by 40%" },
+      { title: "Improved site speed by 50%" },
+    ],
+    link: "https://d-efp.vercel.app/",
+    image: DefpImage,
+    text: "Vist Live Site",
+  },
+  {
+    company: "Veneroo",
+    year: "2024",
+    title: "ERP Project",
+    results: [
+      { title: "Implemented efficient attendance tracking system" },
+      { title: "Developed robust absence recording features" },
+      { title: "Integrated holiday management functionality" },
+      { title: "Optimized employee salary processing" },
+      { title: "Streamlined project management tools" },
+    ],
+    link: "https://github.com/anas-er25/CMS-ERP",
+    image: HRMImage,
+    text: "Get Source Code",
+  },
+  {
+    company: "Academic",
     year: "2024",
     title: "VirtualR Landing Page",
     results: [
@@ -21,24 +54,6 @@ const portfolioProjects = [
     link: "https://virtual-r-iota.vercel.app/",
     image: VirtualRLandingPage,
     text: "Vist Live Site",
-  },
-  {
-    company: "Veneroo",
-    year: "2024",
-    title: "ERP Project",
-    results: [
-      { title: "Implemented efficient attendance tracking system" },
-      { title: "Developed robust absence recording features" },
-      {
-        title: "Enhanced user interface for improved control and navigation",
-      },
-      { title: "Integrated holiday management functionality" },
-      { title: "Optimized employee salary processing" },
-      { title: "Streamlined project management tools" },
-    ],
-    link: "https://github.com/anas-er25/CMS-ERP",
-    image: HRMImage,
-    text: "Get Source Code",
   },
   {
     company: "Veneroo",
@@ -54,24 +69,6 @@ const portfolioProjects = [
     ],
     link: "https://medicareplus.ma/",
     image: MedicareplusImage,
-    text: "Vist Live Site",
-  },
-  {
-    company: "D-def",
-    year: "2023",
-    title: "School Management website",
-    results: [
-      { title: "Developing a School Management Website" },
-      { title: "Develeped and maintained client websites" },
-      { title: "Collaborated with cross-functional teams" },
-      {
-        title: "Implemented responsive design and cross-browser compatibility",
-      },
-      { title: "Enhanced user experience by 40%" },
-      { title: "Improved site speed by 50%" },
-    ],
-    link: "https://d-efp.vercel.app/",
-    image: DefpImage,
     text: "Vist Live Site",
   },
 ];
