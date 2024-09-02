@@ -1,6 +1,7 @@
 import ArrowUpRight from "@/assets/icons/arrow-up-right.svg";
 
 const links = [
+  { name: "Buy me a Coffee", link: "https://buymeacoffee.com/anaser_25" },
   { name: "LinkdeIn", link: "https://www.linkedin.com/in/anas-er-rakibi/" },
   { name: "Instagram", link: "https://www.instagram.com/anas_errakibi" },
   { name: "Facebook", link: "https://www.facebook.com/taner.olmez.160" },
@@ -8,7 +9,7 @@ const links = [
 ];
 
 export const Footer = () => {
-   const currentYear = new Date().getFullYear();
+  const currentYear = new Date().getFullYear();
   return (
     <footer className="relative overflow-x-clip">
       <div className="absolute h-[400px] w-[1600px] bottom-0 left-1/2 -translate-x-1/2 bg-emerald-300/30 [mask-image:radial-gradient(50%_50%_at_bottom_center,black,transparent)] -z-10"></div>

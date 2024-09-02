@@ -12,7 +12,7 @@ const testimonials = [
   {
     name: "AKZIZ Zakaria",
     position: "Full Stack Web Developper @ FreeLancer",
-    text: "Anas was instrumental in transforming our website into a powerful marketing tool. His attention to detail and ability to understand our brand is exceptional. We're thrilled with the results!",
+    text: "I had the pleasure of working with Anas ERRAKIBI, and their expertise truly transformed our project. Their timely delivery and excellent communication made the process smooth and efficient. I highly recommend Him for any web development needs.",
     avatar: memojiAvatar1,
   },
   // {
@@ -24,7 +24,7 @@ const testimonials = [
   {
     name: "BELAID Abderrahim",
     position: "Full Stack Web Developper @ FreeLancer",
-    text: "Anas's ability to create seamless user experiences is unmatched. Our website has seen a significant increase in conversions since launching the new design. We couldn't be happier.",
+    text: "Working with Anas has been an enriching experience. His expertise in development, combined with his team spirit and ability to find innovative solutions, has greatly contributed to the success of our projects. A reliable and passionate developer whom I highly recommend.",
     avatar: memojiAvatar3,
   },
   // {
@@ -36,8 +36,14 @@ const testimonials = [
   {
     name: "ELALAOUI Abdelkarim",
     position: "Frontend Web Developper @ FreeLancer",
-    text: "Anas's work on our website has been nothing short of exceptional. He&apos;s a talented developer who is also a great communicator. We highly recommend him.",
+    text: 'Collaborating with "ERRAKIBI ANAS" was a great experience. His skill in designing seamless user experiences and his meticulous attention to detail led to great results. I am very happy with the results I got with him!',
     avatar: memojiAvatar5,
+  },
+  {
+    name: "ALMOU Oualid",
+    position: "Web Designer @ FreeLancer",
+    text: 'Working on the same team with Mr "Anas" was a good experience, because he’s very creative and pays close attention to design details and any problem on the project . He’s great at analyzing problems and finding solutions, and he’s also a good listener when it comes to other people\'s suggestions.',
+    avatar: memojiAvatar3,
   },
 ];
 
