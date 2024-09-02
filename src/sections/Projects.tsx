@@ -38,7 +38,7 @@ const portfolioProjects = [
       { title: "Optimized employee salary processing" },
       { title: "Streamlined project management tools" },
     ],
-    link: "https://github.com/anas-er25/CMS-ERP",
+    link: "https://buymeacoffee.com/anaser_25/e/298045",
     image: HRMImage,
     text: "Get Source Code",
   },
