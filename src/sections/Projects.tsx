@@ -51,9 +51,9 @@ const portfolioProjects = [
       { title: "Improved site speed by 50%" },
       { title: "Increased mobile traffic by 35%" },
     ],
-    link: "https://virtual-r-iota.vercel.app/",
+    link: "https://buymeacoffee.com/anaser_25/e/297849",
     image: VirtualRLandingPage,
-    text: "Vist Live Site",
+    text: "Get Source Code",
   },
   {
     company: "Veneroo",
