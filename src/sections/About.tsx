@@ -8,7 +8,11 @@ import GitHubIcon from "@/assets/icons/github.svg";
 import ReactIcon from "@/assets/icons/react.svg";
 import CssIcon from "@/assets/icons/css3.svg";
 import HtmlIcon from "@/assets/icons/html5.svg";
+import LaravelIcon from "@/assets/icons/laravel.svg";
 import JsIcon from "@/assets/icons/square-js.svg";
+import DockerIcon from "@/assets/icons/docker.svg";
+import PHPIcon from "@/assets/icons/php.svg";
+import NodeJsIcon from "@/assets/icons/node-js.svg";
 import SmileMemoji from "@/assets/images/memoji-smile.png";
 import { Card } from "@/components/Card";
 import { CardHeader } from "@/components/CardHeader";
@@ -22,24 +26,37 @@ const toolBoxItems = [
     iconType: HtmlIcon,
   },
   {
+    title: "CSS3",
+    iconType: CssIcon,
+  },
+  {
     title: "JavaScript",
     iconType: JsIcon,
   },
   {
-    title: "CSS3",
-    iconType: CssIcon,
+    title: "PHP",
+    iconType: PHPIcon,
+  },
+  {
+    title: "Laravel",
+    iconType: LaravelIcon,
   },
   {
     title: "ReactJS",
     iconType: ReactIcon,
   },
   {
-    title: "Chrome",
-    iconType: ChromeIcon,
+    title: "NodeJs",
+    iconType: NodeJsIcon,
   },
+
   {
     title: "GitHub",
     iconType: GitHubIcon,
+  },
+  {
+    title: "Docker",
+    iconType: DockerIcon,
   },
 ];
 const hobbies = [
