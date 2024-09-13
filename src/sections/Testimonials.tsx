@@ -6,7 +6,7 @@ import memojiAvatar5 from "@/assets/images/memoji-avatar-5.webp";
 import { HeaderSection } from "@/components/HeaderSection";
 import Image from "next/image";
 import { Card } from "@/components/Card";
-import { Fragment, memo, React } from "react";
+import { Fragment} from "react";
 
 const testimonials = [
   {
@@ -47,7 +47,7 @@ const testimonials = [
   },
 ];
 
-export const TestimonialsSection = React.memo(() => {
+export const TestimonialsSection = () => {
   return (
     <section className="py-16 lg:py-24">
       <div className="container">
@@ -93,4 +93,4 @@ export const TestimonialsSection = React.memo(() => {
       </div>
     </section>
   );
-});
+};
