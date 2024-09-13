@@ -1,7 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
-import memojiImage from "@/assets/images/memoji-computer.png";
-import grainImage from "@/assets/images/grain.jpg";
+import memojiImage from "@/assets/images/memoji-computer.webp";
+import grainImage from "@/assets/images/grain.webp";
 import ArrowDown from "@/assets/icons/arrow-down.svg";
 import StarIcon from "@/assets/icons/star.svg";
 import SparkleIcon from "@/assets/icons/sparkle.svg";

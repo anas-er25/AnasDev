@@ -36,7 +36,7 @@ export const HeroOrbit = ({
           <div
             className={twMerge(shouldSpin === true && "animate-spin")}
             style={{
-              animationDuration: orbitDuration,
+              animationDuration: spinDuration,
             }}
           >
             <div

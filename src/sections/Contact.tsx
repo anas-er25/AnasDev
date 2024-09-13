@@ -1,7 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
 import ArrowUpRight from "@/assets/icons/arrow-up-right.svg";
-import grainImage from "@/assets/images/grain.jpg";
+import grainImage from "@/assets/images/grain.webp";
 
 const textVariants = {
   hidden: { opacity: 0, y: 50 },

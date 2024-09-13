@@ -1,12 +1,13 @@
-import VirtualRLandingPage from "@/assets/images/VirtualR.png";
-import HRMImage from "@/assets/images/veneroo.png";
-import MedicareplusImage from "@/assets/images/medicareplus.png";
-import DefpImage from "@/assets/images/defp.png";
+import VirtualRLandingPage from "@/assets/images/VirtualR.webp";
+import HRMImage from "@/assets/images/veneroo.webp";
+import MedicareplusImage from "@/assets/images/medicareplus.webp";
+import DefpImage from "@/assets/images/defp.webp";
 import CheckIcon from "@/assets/icons/check-circle.svg";
 import ArrowUpRightIcon from "@/assets/icons/arrow-up-right.svg";
 import Image from "next/image";
 import { HeaderSection } from "@/components/HeaderSection";
 import { Card } from "@/components/Card";
+import { memo } from "react";
 
 const portfolioProjects = [
   {
@@ -73,7 +74,7 @@ const portfolioProjects = [
   },
 ];
 
-export const ProjectsSection = () => {
+export const ProjectsSection = memo(() => {
   return (
     <section className="pb-16 lg:py-24" id="project">
       <div className="container">
@@ -125,6 +126,8 @@ export const ProjectsSection = () => {
                     src={project.image}
                     alt={project.title}
                     className="mt-8 -mb-4 md:-mb-0 lg:mt-0 lg:absolute lg:h-full lg:w-auto lg:max-w-none"
+                    loading={projectIndex < 2 ? "eager" : "lazy"}
+                    priority={projectIndex < 2}
                   />
                 </div>
               </div>
@@ -134,4 +137,4 @@ export const ProjectsSection = () => {
       </div>
     </section>
   );
-};
+});
