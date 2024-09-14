@@ -6,7 +6,7 @@ import memojiAvatar5 from "@/assets/images/memoji-avatar-5.webp";
 import { HeaderSection } from "@/components/HeaderSection";
 import Image from "next/image";
 import { Card } from "@/components/Card";
-import { Fragment} from "react";
+import { Fragment } from "react";
 
 const testimonials = [
   {
@@ -15,24 +15,24 @@ const testimonials = [
     text: "I had the pleasure of working with Anas ERRAKIBI, and their expertise truly transformed our project. Their timely delivery and excellent communication made the process smooth and efficient. I highly recommend him for any web development needs.",
     avatar: memojiAvatar1,
   },
-  {
-    name: "Head of Design",
-    position: "Head of Design @ GreenLeaf",
-    text: "Working with Anas was a pleasure. His expertise in frontend development brought our designs to life in a way we never imagined. The website has exceeded our expectations.",
-    avatar: memojiAvatar2,
-  },
+  // {
+  //   name: "Head of Design",
+  //   position: "Head of Design @ GreenLeaf",
+  //   text: "Working with Anas was a pleasure. His expertise in frontend development brought our designs to life in a way we never imagined. The website has exceeded our expectations.",
+  //   avatar: memojiAvatar2,
+  // },
   {
     name: "BELAID Abderrahim",
     position: "Full Stack Web Developer @ FreeLancer",
     text: "Working with Anas has been an enriching experience. His expertise in development, combined with his team spirit and ability to find innovative solutions, has greatly contributed to the success of our projects. A reliable and passionate developer whom I highly recommend.",
     avatar: memojiAvatar3,
   },
-  {
-    name: "Emily Carter",
-    position: "Product Manager @ GlobalTech",
-    text: "Anas is a true frontend wizard. He took our complex product and transformed it into an intuitive and engaging user interface. We're already seeing positive feedback from our customers.",
-    avatar: memojiAvatar4,
-  },
+  // {
+  //   name: "Emily Carter",
+  //   position: "Product Manager @ GlobalTech",
+  //   text: "Anas is a true frontend wizard. He took our complex product and transformed it into an intuitive and engaging user interface. We're already seeing positive feedback from our customers.",
+  //   avatar: memojiAvatar4,
+  // },
   {
     name: "ELALAOUI Abdelkarim",
     position: "Frontend Web Developer @ FreeLancer",
