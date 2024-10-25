@@ -3,6 +3,7 @@ import memojiAvatar2 from "@/assets/images/memoji-avatar-2.webp";
 import memojiAvatar3 from "@/assets/images/memoji-avatar-3.webp";
 import memojiAvatar4 from "@/assets/images/memoji-avatar-4.webp";
 import memojiAvatar5 from "@/assets/images/memoji-avatar-5.webp";
+import memojiAvatar6 from "@/assets/images/memoji-avatar-6.webp";
 import { HeaderSection } from "@/components/HeaderSection";
 import Image from "next/image";
 import { Card } from "@/components/Card";
@@ -37,7 +38,7 @@ const testimonials = [
     name: "ELALAOUI Abdelkarim",
     position: "Frontend Web Developer @ FreeLancer",
     text: "Collaborating with Anas ERRAKIBI was a great experience. His skill in designing seamless user experiences and his meticulous attention to detail led to great results. I am very happy with the results I got with him!",
-    avatar: memojiAvatar5,
+    avatar: memojiAvatar6,
   },
   {
     name: "ALMOU Oualid",
