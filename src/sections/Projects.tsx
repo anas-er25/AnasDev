@@ -11,7 +11,7 @@ import { memo } from "react";
 
 const portfolioProjects = [
   {
-    company: "D-def",
+    company: "D-efp",
     year: "2024",
     title: "School Management website",
     results: [
@@ -114,7 +114,7 @@ export const ProjectsSection = () => {
                       </li>
                     ))}
                   </ul>
-                  <a href={project.link}>
+                  <a href={project.link} target="_blank">
                     <button className="bg-white text-gray-950 h-12 w-full md:w-auto px-6 rounded-xl font-semibold inline-flex items-center justify-center gap-2 mt-8">
                       <span>{project.text}</span>
                       <ArrowUpRightIcon className="size-4" />
