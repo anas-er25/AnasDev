@@ -11,7 +11,7 @@ import { memo } from "react";
 
 const portfolioProjects = [
   {
-    company: "D-efp",
+    company: "EtabHub",
     year: "2024",
     title: "School Management website",
     results: [
@@ -24,7 +24,7 @@ const portfolioProjects = [
       { title: "Enhanced user experience by 40%" },
       { title: "Improved site speed by 50%" },
     ],
-    link: "https://d-efp.vercel.app/",
+    link: "https://etabhub.com",
     image: DefpImage,
     text: "Vist Live Site",
   },
