@@ -18,6 +18,8 @@ import { CardHeader } from "@/components/CardHeader";
 import { ToolBoxItems } from "@/components/ToolBoxItems";
 import { motion } from "framer-motion";
 import { useRef } from "react";
+import { MyMe } from "./MyMe";
+
 
 const toolBoxItems = [
   {
@@ -197,6 +199,7 @@ export const AboutSection = () => {
               </div>
             </Card>
           </div>
+          <MyMe/>
         </div>
       </div>
     </div>
