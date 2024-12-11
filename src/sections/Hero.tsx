@@ -12,15 +12,6 @@ const buttonVariants = {
   tap: { scale: 0.95 },
 };
 
-const textVariants = {
-  hidden: { opacity: 0, y: 50 },
-  visible: { opacity: 1, y: 0 },
-};
-
-const imageVariants = {
-  hidden: { opacity: 0, scale: 0.5 },
-  visible: { opacity: 1, scale: 1 },
-};
 
 export const HeroSection = () => {
   const ConnectClick = () => {

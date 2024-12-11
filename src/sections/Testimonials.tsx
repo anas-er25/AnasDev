@@ -71,7 +71,7 @@ export const TestimonialsSection = () => {
                         <Image
                           src={testimonial.avatar}
                           alt={testimonial.name}
-                          className="max-h-full"
+                          className="max-h-full rounded-full"
                           loading="lazy"
                         />
                       </div>
