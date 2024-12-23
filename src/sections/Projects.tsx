@@ -39,9 +39,9 @@ const portfolioProjects = [
       { title: "Optimized employee salary processing" },
       { title: "Streamlined project management tools" },
     ],
-    link: "https://buymeacoffee.com/anaser_25/e/298045",
+    link: "https://veneroo.vercel.app/",
     image: HRMImage,
-    text: "Get Source Code",
+    text: "Vist Live Site",
   },
   {
     company: "Academic",
@@ -52,9 +52,9 @@ const portfolioProjects = [
       { title: "Improved site speed by 50%" },
       { title: "Increased mobile traffic by 35%" },
     ],
-    link: "https://buymeacoffee.com/anaser_25/e/297849",
+    link: "https://virtual-r-iota.vercel.app/",
     image: VirtualRLandingPage,
-    text: "Get Source Code",
+    text: "Vist Live Site",
   },
   {
     company: "Veneroo",
